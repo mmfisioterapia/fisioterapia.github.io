@@ -1,0 +1,321 @@
+/* GENERAL */
+body{
+  margin:0;
+  font-family: Magneto, sans-serif;
+  background-image:url("fondo.jfif");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 400px;
+  width: 100px;
+}
+h1 {
+  text-align:center;
+  color:#871F78;
+  font-size:45px;
+  margin-top:20px;
+}
+/* MENU */
+nav{
+  background:rgba(255,255,255,0.9);
+  text-align:center;
+  padding:15px;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+nav a{
+  margin:15px;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:bold;
+  color:black;
+  padding:8px 15px;
+  border-radius:20px;
+  transition:0.3s;
+}
+nav a:hover{
+  background:#00008B;
+  color:white;
+}
+/* SECCIONES */
+section{
+  padding:50px;
+  margin:40px;
+  background:rgba(255,255,255,0.9);
+  border-radius:10px;
+  display:none; /* todas ocultas inicialmente */
+}
+/* IMAGENES */
+section img{
+  width:200px;
+  border-radius:10px;
+  margin:10px;
+}
+/* COMENTARIOS */
+.comentarios-container{
+      max-width:600px;
+      margin:auto;
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+input, textarea{
+      width:100%;
+      padding:10px;
+      margin-bottom:10px;
+      border:1px solid #ccc;
+      border-radius:5px;
+      font-size:15px;
+    }
+
+    button{
+      background:#007bff;
+      color:white;
+      border:none;
+      padding:10px 15px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#0056b3;
+    }
+.comentario{
+      background:#fafafa;
+      border:1px solid #ddd;
+      padding:15px;
+      border-radius:8px;
+      margin-top:15px;
+      position:relative;
+    }
+
+    .comentario strong{
+      display:block;
+      margin-bottom:5px;
+    }
+
+    .menu{
+      position:absolute;
+      top:10px;
+      right:10px;
+    }
+
+    .menu-btn{
+      background:none;
+      border:none;
+      font-size:20px;
+      cursor:pointer;
+      color:#555;
+    }
+
+    .menu-opciones{
+      display:none;
+      position:absolute;
+      right:0;
+      top:30px;
+      background:white;
+      border:1px solid #ccc;
+      border-radius:5px;
+      overflow:hidden;
+      z-index:100;
+    }
+
+    .menu-opciones button{
+      display:block;
+      width:100%;
+      border:none;
+      background:white;
+      color:black;
+      padding:10px;
+      text-align:left;
+      cursor:pointer;
+    }
+
+    .menu-opciones button:hover{
+      background:#f0f0f0;
+    }
+
+    .mostrar{
+      display:block;
+    }
+/* FORMULARIO */
+#mensaje{
+    font-weight: bold;
+}
+
+#listaCitas{
+    list-style: none;
+    padding: 0;
+}
+
+#listaCitas li{
+    background: #f2f2f2;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+form{
+  max-width:400px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+li{
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+}
+
+.eliminar{
+    background: #4a37b4;
+    margin-top: 10px;
+}
+input, select, textarea{
+  margin:8px 0;
+  padding:10px;
+  border-radius:5px;
+  border:1px solid gray;
+}
+button{
+  padding:10px;
+  background:#4a37b4;
+  border:none;
+  color:white;
+  font-size:16px;
+  border-radius:5px;
+  cursor:pointer;
+  transition:0.3s;
+}
+button:hover{
+  background:#e8c0ff;
+}
+.comentarios-box{
+      width:500px;
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+input, textarea{
+      width:100%;
+      padding:10px;
+      margin-top:10px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      font-size:14px;
+      box-sizing:border-box;
+    }
+    textarea{
+      height:80px;
+      resize:none;
+    }
+    .btn-publicar{
+      margin-top:10px;
+      padding:10px 15px;
+      border:none;
+      border-radius:8px;
+      color:white;
+      cursor:pointer;
+    }
+.comentario{
+      background:#f9f9f9;
+      padding:15px;
+      border-radius:10px;
+      margin-top:15px;
+      position:relative;
+    }
+    .nombre{
+      font-weight:bold;
+      color:#333;
+      margin-bottom:5px;
+    }
+    .texto{
+      color:#555;
+    }
+    .menu{
+      position:absolute;
+      top:10px;
+      right:10px;
+      cursor:pointer;
+      font-size:20px;
+      user-select:none;
+    }
+    .opciones{
+      display:none;
+      position:absolute;
+      right:0;
+      top:25px;
+      background:white;
+      border:1px solid #ccc;
+      border-radius:8px;
+      overflow:hidden;
+      box-shadow:0 2px 8px rgba(0,0,0,0.2);
+      z-index:10;
+    }
+    .opciones button{
+      background:white;
+      color:red;
+      width:100%;
+      border:none;
+      padding:10px;
+      cursor:pointer;
+      text-align:left;
+    }
+    .opciones button:hover{
+      background:#eee;
+    }
+/* REDES SOCIALES */
+.social{
+  position:fixed;
+  left:10px;
+  top:200px;
+  display: flex;
+  flex-direction: column;
+}
+.social a{
+  display:flex;
+  align-items:center;
+  color:white;
+  text-decoration:none;
+  padding:2px;
+  margin:10px 0;
+  width:45px;
+  height:45px;
+  overflow:hidden;
+  transition:0.4s;
+  border-radius:50%;
+}
+.social a:hover{
+  width:170px;
+  border-radius:25px;
+}
+.social img{
+  width:30px;
+  height:30px;
+  margin-right:10px;
+  object-fit:contain;
+  background:white;
+  border-radius:50%;
+  padding:2px;
+}
+.contenedor {
+  text-align: center;
+}
+.elemento {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+  margin: 2%;
+}
+/* COLORES REDES */
+.facebook{background:#1877F2;}
+.instagram{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);}
+.whatsapp{background:#25D366;}
